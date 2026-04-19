@@ -39,5 +39,5 @@ def main():
     print("3. Create visualizations")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
