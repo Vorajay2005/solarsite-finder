@@ -20,6 +20,7 @@ Two large datasets are not included in this repo due to file size. Download and 
 
 1. Download it from https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
 2. Follow the below folder structure
+3. REMEMBER TO DOWNLOAD FULL FOLDER AND PUT IT UNDER RAW (LOOK AT FILE STRUCTURE FOR CLEARER IDEA)
 
 ```
 data/raw/nj_land_cover/
@@ -34,6 +35,7 @@ data/raw/nj_land_cover/
 
 1. Download it from https://drive.google.com/drive/folders/12w_R22HhN09R_mgZdBEBRvGh6h4m3_cE
 2. Follow the below folder structure
+3. REMEMBER TO DOWNLOAD FULL FOLDER AND PUT IT UNDER RAW (LOOK AT FILE STRUCTURE FOR CLEARER IDEA)
 
 ```
 data/raw/solar_radiation_nj/
@@ -72,3 +74,56 @@ Each site scores 0–100 across four weighted factors:
 | Proximity to Existing Sites | 10% |
 
 Each site also includes an ML-predicted installed capacity (MW) from a Random Forest model trained on 6,611 real USPVDB installations.
+
+---
+
+##Final Folder Structure 
+
+solarsite-finder/
+├── backend/
+│   ├── app.py
+│   └── requirements.txt
+├── data/
+│   ├── cleaned/
+│   ├── processed/
+│   └── raw/
+│       ├── nj_land_cover/
+│       │   ├── Land_Use_2020.{cpg,dbf,prj,shp,shp.xml,shx}
+│       ├── solar_radiation_nj/
+│       │   ├── *.csv  (thousands of per-lat/lon files)
+│       ├── solar_radiation_nj.csv
+│       └── uspvdb.csv
+├── database/
+│   ├── schema.sql
+│   └── solar_site_finder.db
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── FilterPanel.jsx
+│   │   │   ├── MapView.jsx
+│   │   │   ├── SiteDetailModal.jsx
+│   │   │   ├── StatsCharts.jsx
+│   │   │   └── TopSitesList.jsx
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── models/
+├── notebooks/
+│   └── solar_analysis.ipynb
+├── scripts/
+│   ├── create_database.py
+│   ├── export_cleaned_data.py
+│   ├── export_results.py
+│   ├── generate_candidate_sites.py
+│   ├── load_datasets.py
+│   ├── score_sites.py
+│   └── train_model.py
+├── .gitignore
+├── README.md
+└── run.sh
