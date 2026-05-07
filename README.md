@@ -16,33 +16,84 @@ A full-stack data science application that identifies and scores optimal locatio
 
 Two large datasets are not included in this repo due to file size. Download and place them manually before running.
 
+> [!WARNING]
+> The pipeline looks for these datasets in specific subfolders inside `data/raw/`.
+> Placing files directly in `data/raw/` instead of the subfolders will cause the pipeline to fail.
+
+---
+
 ### 1. NJ Land Cover Shapefile
 
-1. Download it from https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
-2. Follow the below folder structure
-3. REMEMBER TO DOWNLOAD FULL FOLDER AND PUT IT UNDER RAW (LOOK AT FILE STRUCTURE FOR CLEARER IDEA)
+**Download:** https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
+
+**Steps:**
+
+**Step 1** — Open the Google Drive link. You will see a folder called `nj_land_cover` containing these files:
 
 ```
-data/raw/nj_land_cover/
+nj_land_cover/
 ├── Land_Use_2020.cpg
 ├── Land_Use_2020.dbf
 ├── Land_Use_2020.prj
 ├── Land_Use_2020.shp
-└── ...
+├── Land_Use_2020.shp.xml
+└── Land_Use_2020.shx
 ```
+
+**Step 2** — Download the **entire folder** (right-click → Download). Do not download files one by one.
+
+**Step 3** — Extract the zip and place the folder so your project looks like this:
+
+```
+data/
+└── raw/
+    └── nj_land_cover/          ← the folder goes HERE
+        ├── Land_Use_2020.cpg
+        ├── Land_Use_2020.dbf
+        ├── Land_Use_2020.prj
+        ├── Land_Use_2020.shp
+        ├── Land_Use_2020.shp.xml
+        └── Land_Use_2020.shx
+```
+
+> [!IMPORTANT]
+> The folder must be named `nj_land_cover` and must sit directly inside `data/raw/`.
+> The pipeline specifically looks for `data/raw/nj_land_cover/Land_Use_2020.shp`.
+
+---
 
 ### 2. Solar Radiation Data (NSRDB)
 
-1. Download it from https://drive.google.com/drive/folders/12w_R22HhN09R_mgZdBEBRvGh6h4m3_cE
-2. Follow the below folder structure
-3. REMEMBER TO DOWNLOAD FULL FOLDER AND PUT IT UNDER RAW (LOOK AT FILE STRUCTURE FOR CLEARER IDEA)
+**Download:** https://drive.google.com/drive/folders/12w_R22HhN09R_mgZdBEBRvGh6h4m3_cE
+
+**Steps:**
+
+**Step 1** — Open the Google Drive link. You will see a folder called `solar_radiation_nj` containing thousands of CSV files like:
 
 ```
-data/raw/solar_radiation_nj/
+solar_radiation_nj/
 ├── 1194517_41.33_-75.54_2024.csv
 ├── 1194518_41.29_-75.54_2024.csv
+├── 1194519_41.25_-75.54_2024.csv
 └── ... (2,500+ files)
 ```
+
+**Step 2** — Download the **entire folder** (right-click → Download). Do not download files one by one.
+
+**Step 3** — Extract the zip and place the folder so your project looks like this:
+
+```
+data/
+└── raw/
+    └── solar_radiation_nj/     ← the folder goes HERE
+        ├── 1194517_41.33_-75.54_2024.csv
+        ├── 1194518_41.29_-75.54_2024.csv
+        └── ... (2,500+ files)
+```
+
+> [!IMPORTANT]
+> The folder must be named `solar_radiation_nj` and must sit directly inside `data/raw/`.
+> The pipeline scans every `.csv` inside this folder — if the folder is missing or empty, solar radiation data will not load.
 
 ---
 
