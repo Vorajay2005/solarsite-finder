@@ -4,6 +4,14 @@ A full-stack data science application that identifies and scores optimal locatio
 
 ---
 
+## Demo
+
+<!-- Replace the URL below with your actual demo video link (YouTube, Loom, Google Drive, etc.) -->
+
+[![Demo Video](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)](https://youtu.be/A6LnCbixREw)
+
+---
+
 ## Prerequisites
 
 - Python 3.10+
@@ -106,6 +114,7 @@ From the project root:
 ```
 
 This will run the full data pipeline (create DB, load datasets, generate candidate sites, train model, score sites), then start:
+
 - Flask backend at `http://localhost:5001`
 - React frontend at `http://localhost:5173`
 
@@ -117,12 +126,12 @@ This will run the full data pipeline (create DB, load datasets, generate candida
 
 Each site scores 0–100 across four weighted factors:
 
-| Factor | Weight |
-|---|---|
-| Solar Irradiance (GHI) | 35% |
-| Land Cover Suitability | 35% |
-| Slope (flatness) | 20% |
-| Proximity to Existing Sites | 10% |
+| Factor                      | Weight |
+| --------------------------- | ------ |
+| Solar Irradiance (GHI)      | 35%    |
+| Land Cover Suitability      | 35%    |
+| Slope (flatness)            | 20%    |
+| Proximity to Existing Sites | 10%    |
 
 Each site also includes an ML-predicted installed capacity (MW) from a Random Forest model trained on 6,611 real USPVDB installations.
 
@@ -179,3 +188,4 @@ solarsite-finder/
 ├── .gitignore
 ├── README.md
 └── run.sh
+```
