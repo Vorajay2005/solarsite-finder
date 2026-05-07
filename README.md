@@ -18,9 +18,8 @@ Two large datasets are not included in this repo due to file size. Download and 
 
 ### 1. NJ Land Cover Shapefile
 
-1. Download the shapefile from the [NJ DEP Open Data portal](https://www.nj.gov/dep/gis/digidownload/zips/OpenData/LULC2020_ver1.zip) (~300–600 MB zip).
-2. Extract the zip — you'll get files like `LULC2020_ver1.shp`, `.dbf`, `.shx`, `.prj`, etc.
-3. Place **all extracted files** into `data/raw/nj_land_cover/`.
+1. Download it from https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
+2. Follow the below folder structure
 
 ```
 data/raw/nj_land_cover/
@@ -33,11 +32,8 @@ data/raw/nj_land_cover/
 
 ### 2. Solar Radiation Data (NSRDB)
 
-1. Create a free account at [https://nsrdb.nrel.gov/data-viewer](https://nsrdb.nrel.gov/data-viewer).
-2. Draw a bounding box over New Jersey (lat 38.9–41.4, lon -75.6 to -73.9).
-3. Select **PSM v3**, year **2020**, **hourly** resolution, then request the download.
-4. NREL will email you a link — download and extract the zip (2,500+ CSV files).
-5. Place **all CSV files** into `data/raw/solar_radiation_nj/`.
+1. Download it from https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
+2. Follow the below folder structure
 
 ```
 data/raw/solar_radiation_nj/
