@@ -53,7 +53,6 @@ data/raw/solar_radiation_nj/
 From the project root:
 
 ```bash
-chmod +x run.sh
 ./run.sh
 ```
 
