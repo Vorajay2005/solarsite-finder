@@ -4,7 +4,7 @@ A full-stack data science application that identifies and scores optimal locatio
 
 ---
 
-## Demo
+## Video Demo
 
 <!-- Replace the URL below with your actual demo video link (YouTube, Loom, Google Drive, etc.) -->
 
