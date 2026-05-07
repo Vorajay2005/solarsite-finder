@@ -6,7 +6,6 @@ A full-stack data science application that identifies and scores optimal locatio
 
 ## Video Demo
 
-<!-- Replace the URL below with your actual demo video link (YouTube, Loom, Google Drive, etc.) -->
 
 [![Demo Video](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)](https://youtu.be/A6LnCbixREw)
 
