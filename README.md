@@ -77,8 +77,9 @@ Each site also includes an ML-predicted installed capacity (MW) from a Random Fo
 
 ---
 
-##Final Folder Structure 
+## Folder structure
 
+```text
 solarsite-finder/
 ├── backend/
 │   ├── app.py
