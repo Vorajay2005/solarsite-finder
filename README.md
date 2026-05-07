@@ -32,7 +32,7 @@ data/raw/nj_land_cover/
 
 ### 2. Solar Radiation Data (NSRDB)
 
-1. Download it from https://drive.google.com/drive/folders/1Hfkh73Ry9hC0ePL5hhAaE_8oSaunD7qQ?usp=sharing
+1. Download it from https://drive.google.com/drive/folders/12w_R22HhN09R_mgZdBEBRvGh6h4m3_cE
 2. Follow the below folder structure
 
 ```
