@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Large data files
+data/raw/nj_land_cover/
+data/raw/solar_radiation_nj/
+
+# Generated database
+database/solar_site_finder.db
