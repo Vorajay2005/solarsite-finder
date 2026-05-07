@@ -24,10 +24,10 @@ Two large datasets are not included in this repo due to file size. Download and 
 
 ```
 data/raw/nj_land_cover/
-├── LULC2020_ver1.shp
-├── LULC2020_ver1.dbf
-├── LULC2020_ver1.shx
-├── LULC2020_ver1.prj
+├── Land_Use_2020.cpg
+├── Land_Use_2020.dbf
+├── Land_Use_2020.prj
+├── Land_Use_2020.shp
 └── ...
 ```
 
@@ -39,8 +39,8 @@ data/raw/nj_land_cover/
 
 ```
 data/raw/solar_radiation_nj/
-├── 40.0_-74.5_psm3.csv
-├── 39.5_-74.0_psm3.csv
+├── 1194517_41.33_-75.54_2024.csv
+├── 1194518_41.29_-75.54_2024.csv
 └── ... (2,500+ files)
 ```
 
